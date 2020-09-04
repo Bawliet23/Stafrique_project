@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9c9483;
+}
+
+.about-Society> h1,.about-Society>p{
+    font-size: .9em;
+    color: white;
+}
+.about-Society{
+    background-color: #292524;
+    height: 70vh;
+    margin: auto 0;
+    border-radius: 10px;
+    /* box-shadow: 50px 50px grey; */
+
+    
+}
+.about-title{
+    grid-column:1/span 3 ;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cf_img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-container{
+    top: 0px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 30%  40% 30%;
+    height: 100vh;
+
+}
+.about-container div{
+    padding: 0 10px;
+}
+.co-founder1-container ,.co-founder2-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.cf-info{
+    color: white;
+}
+.cf-name{
+    font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 823px) {
+ .cf_img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}  
+.cf-info{
+    display: none;
+}
+.displayInfo{
+    display: inline-block;
+    background-color:black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 50vh;
+    text-align: center;
+    padding-top: 10%;
+    border-radius: 30%;
+
+
+
+} 
+}
+
+@media screen and (max-width: 500px) {
+    .cf_img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }   
+}
